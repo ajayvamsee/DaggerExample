@@ -7,7 +7,7 @@ import dagger.Component;
  * Time : 15:41 HRS
  */
 
-@Component
+@Component ( modules = WheelsModule.class)
 public interface CarComponent {
 
     Car getCar();

@@ -8,6 +8,11 @@ import javax.inject.Inject;
  */
 public class Wheels {
 
-    @Inject
-    public Wheels(){}
+    private Rim rims;
+    private Tires tires;
+
+    public Wheels(Rim rim, Tires tires){
+        this.rims = rim;
+        this.tires = tires;
+    }
 }
